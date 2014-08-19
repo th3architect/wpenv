@@ -14,7 +14,7 @@
   ],
   "require": {
     "php": ">=5.3.0",
-    "symfony/yaml": "2.6.*@dev",
+    "symfony/yaml": "2.5.3",
     "donut/array_dig": "0.1.1",
     "donut/array_kmap": "0.1.2",
     "donut/capture_buffer": "0.1.0",
