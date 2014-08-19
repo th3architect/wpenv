@@ -1,0 +1,15 @@
+<?php namespace wpenv ?>
+
+production: &default
+  DB_NAME:      <?php env("DB_NAME") ?>
+  DB_USER:      <?php env("DB_USER") ?>
+  DB_PASSWORD:  <?php env("DB_PASSWORD") ?>
+  DB_HOST:      <?php env("DB_HOST", "127.0.0.1") ?>
+  DB_CHARSET:   <?php env("DB_CHARSET", "utf8") ?>
+  DB_COLLATE:   <?php env("DB_COLLATE", "") ?>
+
+development:
+  <<: *default
+  DB_NAME:      <?php env("DB_NAME",      "wordpress_db") ?>
+  DB_USER:      <?php env("DB_USER",      "wordpress_user") ?>
+  DB_PASSWORD:  <?php env("DB_PASSWORD",  "wordpress_pass") ?>

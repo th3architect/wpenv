@@ -1,0 +1,28 @@
+<?php namespace wpenv ?>
+
+production: &default
+  AUTH_KEY:         <?php env("AUTH_KEY") ?>
+  SECURE_AUTH_KEY:  <?php env("SECURE_AUTH_KEY") ?>
+  LOGGED_IN_KEY:    <?php env("LOGGED_IN_KEY") ?>
+  NONCE_KEY:        <?php env("NONCE_KEY") ?>
+  AUTH_SALT:        <?php env("AUTH_SALT") ?>
+  SECURE_AUTH_SALT: <?php env("SECURE_AUTH_SALT") ?>
+  LOGGED_IN_SALT:   <?php env("LOGGED_IN_SALT") ?>
+  NONCE_SALT:       <?php env("NONCE_SALT") ?>
+
+  WP_LANG: ""
+  WP_DEBUG: false
+
+development:
+  <<: *default
+
+  # get values from:
+  # https://api.wordpress.org/secret-key/1.1/salt/
+  AUTH_KEY:
+  SECURE_AUTH_KEY:
+  LOGGED_IN_KEY:
+  NONCE_KEY:
+  AUTH_SALT:
+  SECURE_AUTH_SALT:
+  LOGGED_IN_SALT:
+  NONCE_SALT:

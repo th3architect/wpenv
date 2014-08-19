@@ -1,0 +1,13 @@
+<?php namespace wpenv ?>
+
+development:
+
+  remote1:
+    env:  production
+    host: example.com
+    path: /var/www
+
+  remote2:
+    env:
+    host:
+    path:
