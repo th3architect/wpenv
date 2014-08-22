@@ -25,5 +25,6 @@ foreach ($paths as $rel) {
 // no autoload.php found
 fwrite(STDERR, "You must install the wpenv dependencies\n");
 fwrite(STDERR, "\n");
-fwrite(STDERR, "\t$ composer install");
+fwrite(STDERR, "\t$ composer install\n");
+fwrite(STDERR, "\n");
 exit(1);
