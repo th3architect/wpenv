@@ -19,5 +19,10 @@
     "donut/array_kmap": "~0.1",
     "donut/capture_buffer": "~0.1",
     "donut/path": "~0.1"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.2.x-dev"
+    }
   }
 }
