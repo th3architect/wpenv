@@ -3,15 +3,15 @@
 
 // vendor paths
 $paths = array(
-  "../vendor",
-  "../../../vendor"
+  "../vendor/autoload.php",
+  "../../../../vendor/autoload.php"
 );
 
 // check vendor paths for existing autoload.php
 foreach ($paths as $rel) {
 
   // get canonical path
-  $path = realpath(sprintf("%s/%s/autoload.php", __DIR__, $rel));
+  $path = realpath(sprintf("%s/%s", __DIR__, $rel));
 
   // skip non-existing paths
   if ($path === false) continue;
